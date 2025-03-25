@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A helping AI Assistant in common use.">
+    <meta name="robots" content="index, follow">
+    <title>Your Helping Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="nav">
+            <div class="logo"><img src="C:\Users\CLIENT\VSC\abstract\images.jpg" alt="Your Logo">Abstract | Help Center</div>
+            <div class="buttons">
+                <button class="request">Submit a request</button>
+                <button class="sign-in">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="hero">
+        <h1>How can we help?</h1>
+        <input type="text" class="search" placeholder="May i help you :) ?" id="searchInput">
+        <button id="searchButton">Search</button>
+    </section>
+    
+    <script>
+        function handleSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const query = searchInput.value.trim();
+    
+            if (query) {
+                console.log('Search query:', query);
+            } else {
+                alert('Please enter a search term.');
+            }
+        }
+
+        document.getElementById('searchButton').addEventListener('click', handleSearch);
+    </script>
+
+    <!-- Help Topics -->
+    <section class="help-topics">
+        <div class="topic">
+            <img src="C:\Users\CLIENT\VSC\abstract\360_F_39226097_c9HUAZlFAUpFLsScM9CJvfiDCvrtNLQp.jpg" alt="Branches">
+            <h3>Branches</h3>
+            <p>Abstract Branches lets you manage, version, and document your designs in one place.</p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="topic">
+            <img src="C:\Users\CLIENT\VSC\abstract\pngtree-account-managers-flat-style-illustration-vector-png-image_9248271.png" alt="Manage Account">
+            <h3>Manage your account</h3>
+            <p>Configure your account settings, such as your email, profile details, and password.</p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="topic">
+            <img src="C:\Users\CLIENT\VSC\abstract\101-1013157_how-it-works-project-management-logo-png.png" alt="Teams">
+            <h3>Manage organizations, teams, and projects</h3>
+            <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="topic">
+            <img src="C:\Users\CLIENT\VSC\abstract\images (1).jpg" alt="Billing">
+            <h3>Manage billing</h3>
+            <p>Change subscriptions and payment details.</p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="topic">
+            <img src="C:\Users\CLIENT\VSC\abstract\download.jpg" alt="Authentication">
+            <h3>Authenticate to Abstract</h3>
+            <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="topic">
+            <img src="C:\Users\CLIENT\VSC\abstract\08360ed0d871337252f7e548d6f68328.jpg" alt="Support">
+            <h3>Abstract support</h3>
+            <p>Get in touch with a human.</p>
+            <a href="#">Learn More →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="column">
+                <h4>Abstract</h4>
+                <p>Branches</p>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <p>Blog</p>
+                <p>Help Center</p>
+                <p>Release Notes</p>
+                <p>Status</p>
+            </div>
+            <div class="column">
+                <h4>Community</h4>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+                <p>Facebook</p>
+                <p>Dribbble</p>
+                <p>Podcast</p>
+            </div>
+            <div class="column">
+                <h4>Company</h4>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Legal</p>
+                <h5>Contact Us</h5>
+                <p>infonicoledenosta@abstract.com</p>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Abstract Studio Design, Inc. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
